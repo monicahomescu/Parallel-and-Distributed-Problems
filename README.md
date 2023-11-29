@@ -71,3 +71,13 @@ Try three implementations:
 1. Directly implement the parser on the callbacks (event-driven);
 2. Wrap the connect/send/receive operations in tasks, with the callback setting the result of the task;
 3. Like the previous, but also use the async/await mechanism.
+
+## Parallelizing techniques
+
+*Goal:*
+
+The goal is to implement a simple but non-trivial parallel algorithm.
+
+*Requirement:*
+
+Perform the multiplication of 2 polynomials. Use both the `regular O(n2) algorithm` and the `Karatsuba algorithm`, and each in both the `sequential form` and the `parallelized form`.
