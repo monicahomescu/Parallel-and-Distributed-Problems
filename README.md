@@ -81,3 +81,13 @@ The goal is to implement a simple but non-trivial parallel algorithm.
 *Requirement:*
 
 Perform the multiplication of 2 polynomials. Use both the `regular O(n2) algorithm` and the `Karatsuba algorithm`, and each in both the `sequential form` and the `parallelized form`.
+
+## Parallelizing techniques 2 (parallel explore)
+
+*Goal:*
+
+The goal is to implement a simple but non-trivial parallel algorithm.
+
+*Requirement:*
+
+Given a directed graph, find a `Hamiltonian cycle`, if one exists. Use multiple threads to parallelize the search. The search should start from a fixed vertex (no need to take each vertex as the starting point), however, the splitting of the work between threads should happen at several levels, for all possible choices among the neighbors of each current vertex.
